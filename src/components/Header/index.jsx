@@ -32,7 +32,11 @@ function Header({ ...props }) {
     });
 
     if (name == undefined) {
-      console.log("Warning from src/components/Header/index.jsx: name is undefined")
+      console.log("Warning from src/components/Header/index.jsx: name is undefined, pathname: %o", props.location.pathname )
+      props.routes.map((prop, key) => {
+        console.log("props|%o: [%o] => baseUrl: %o, path: %o", key, prop.navbarName, baseUrl, prop.path);
+        return null;
+      });
       name = "Unknown";
     }
 

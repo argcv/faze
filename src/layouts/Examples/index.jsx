@@ -53,13 +53,13 @@ class App extends React.Component {
     }
   }
   componentDidMount() {
-    if (navigator.platform.indexOf("Win") > -1) {
+    if (navigator.platform.indexOf("Win") > -1 && this.refs.mainPanel) {
       const ps = new PerfectScrollbar(this.refs.mainPanel);
     }
     window.addEventListener("resize", this.resizeFunction);
   }
   componentDidUpdate(e) {
-    if (e.history.location.pathname !== e.location.pathname) {
+    if (e.history.location.pathname !== e.location.pathname && this.refs.mainPanel) {
       this.refs.mainPanel.scrollTop = 0;
       if (this.state.mobileOpen) {
         this.setState({ mobileOpen: false });
@@ -88,6 +88,11 @@ class App extends React.Component {
         })}
       </Switch>
     );
+        
+    if (this.props.location.pathname === "/examples/try-redirect") {
+      console.log("path: %o, redirecting to /hello-world", this.props.location.pathname)
+      return <Redirect to='/hello-world' />;
+    }
 
     return (
       <div className={classes.wrapper}>

@@ -78,6 +78,14 @@ const dashboardRoutes = [
     sink: false,
   },
   {
+    path: "/try-redirect",
+    sidebarName: "[[Redirect]]",
+    navbarName: "[[Redirect]]",
+    icon: Notifications,
+    component: NotificationsPage,
+    sink: false,
+  },
+  {
     path: "/upgrade-to-pro",
     sidebarName: "Upgrade To PRO",
     navbarName: "Upgrade To PRO",
