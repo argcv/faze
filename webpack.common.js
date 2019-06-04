@@ -1,5 +1,5 @@
 const path = require('path')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 // https://github.com/johnagan/clean-webpack-plugin
@@ -54,7 +54,7 @@ module.exports = ({
   },
   plugins: [
     // remove/clean your build folder(s) before building
-    new CleanWebpackPlugin(pathsToClean, cleanOptions),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Material Dashboard',
       template: 'public/index.html',
