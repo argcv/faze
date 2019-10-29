@@ -3,16 +3,66 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 // https://github.com/johnagan/clean-webpack-plugin
-// the path(s) that should be cleaned
-let pathsToClean = ['build']
-
-// the clean options to use
 let cleanOptions = {
-  root: __dirname,
-  exclude: [],
-  watch: false,
+  // Simulate the removal of files
+  //
+  // default: false
+  dry: false,
+
+  // Write Logs to Console
+  // (Always enabled when dry is true)
+  //
+  // default: false
   verbose: true,
-  dry: false
+
+  // Automatically remove all unused webpack assets on rebuild
+  //
+  // default: true
+  cleanStaleWebpackAssets: false,
+
+  // Do not allow removal of current webpack assets
+  //
+  // default: true
+  protectWebpackAssets: false,
+
+  // **WARNING**
+  //
+  // Notes for the below options:
+  //
+  // They are unsafe...so test initially with dry: true.
+  //
+  // Relative to webpack's output.path directory.
+  // If outside of webpack's output.path directory,
+  //    use full path. path.join(process.cwd(), 'build/**/*')
+  //
+  // These options extend del's pattern matching API.
+  // See https://github.com/sindresorhus/del#patterns
+  //    for pattern matching documentation
+
+  // Removes files once prior to Webpack compilation
+  //   Not included in rebuilds (watch mode)
+  //
+  // Use !negative patterns to exclude files
+  //
+  // default: ['**/*']
+  // cleanOnceBeforeBuildPatterns: ['**/*', '!static-files*'],
+  cleanOnceBeforeBuildPatterns: [], // disables cleanOnceBeforeBuildPatterns
+
+  // Removes files after every build (including watch mode) that match this pattern.
+  // Used for files that are not created directly by Webpack.
+  //
+  // Use !negative patterns to exclude files
+  //
+  // default: []
+  // cleanAfterEveryBuildPatterns: ['static*.*', '!static1.js'],
+  cleanAfterEveryBuildPatterns: [],
+
+  // Allow clean patterns outside of process.cwd()
+  //
+  // requires dry option to be explicitly set
+  //
+  // default: false
+  dangerouslyAllowCleanPatternsOutsideProject: true,
 }
 
 
@@ -31,7 +81,7 @@ module.exports = ({
   },
   output: {
     filename: 'js/[name].[hash:8].bundle.js',
-    chunkFilename: 'js/[name].[hash:8].bundle.js',
+    chunkFilename: 'js/[name].[hash:8].bundle.js',  
     path: path.resolve(__dirname, 'build'),
     publicPath: '/',
   },
@@ -54,7 +104,7 @@ module.exports = ({
   },
   plugins: [
     // remove/clean your build folder(s) before building
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin(cleanOptions),
     new HtmlWebpackPlugin({
       title: 'Material Dashboard',
       template: 'public/index.html',
