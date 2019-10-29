@@ -18,12 +18,12 @@ let cleanOptions = {
   // Automatically remove all unused webpack assets on rebuild
   //
   // default: true
-  cleanStaleWebpackAssets: false,
+  cleanStaleWebpackAssets: true,
 
   // Do not allow removal of current webpack assets
   //
   // default: true
-  protectWebpackAssets: false,
+  protectWebpackAssets: true,
 
   // **WARNING**
   //
@@ -46,7 +46,8 @@ let cleanOptions = {
   //
   // default: ['**/*']
   // cleanOnceBeforeBuildPatterns: ['**/*', '!static-files*'],
-  cleanOnceBeforeBuildPatterns: [], // disables cleanOnceBeforeBuildPatterns
+  // cleanOnceBeforeBuildPatterns: [], // disables cleanOnceBeforeBuildPatterns
+  cleanOnceBeforeBuildPatterns: ['**/*'],
 
   // Removes files after every build (including watch mode) that match this pattern.
   // Used for files that are not created directly by Webpack.
@@ -62,7 +63,7 @@ let cleanOptions = {
   // requires dry option to be explicitly set
   //
   // default: false
-  dangerouslyAllowCleanPatternsOutsideProject: true,
+  dangerouslyAllowCleanPatternsOutsideProject: false,
 }
 
 
