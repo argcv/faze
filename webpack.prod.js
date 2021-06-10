@@ -1,6 +1,5 @@
 // const webpack = require('webpack')
-// const { merge } = require('webpack-merge') # for higher webpack
-const merge = require('webpack-merge')
+const {merge} = require('webpack-merge')
 // uglifyjs-webpack-plugin does not work now: 
 // see: https://stackoverflow.com/questions/47439067
 // we could use "uglifyjs-webpack-plugin": "1.0.0" force
