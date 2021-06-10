@@ -1010,14 +1010,14 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.0", "@babel/runtime@^7.4.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
   version "7.9.2"
   resolved "https://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.9.2.tgz?cache=0&sync_timestamp=1584800073233&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fruntime%2Fdownload%2F%40babel%2Fruntime-7.9.2.tgz#d90df0583a3a252f09aaa619665367bae518db06"
   integrity sha1-2Q3wWDo6JS8JqqYZZlNnuuUY2wY=
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.14.5":
+"@babel/runtime@^7.12.1", "@babel/runtime@^7.14.5":
   version "7.14.5"
   resolved "https://registry.nlark.com/@babel/runtime/download/@babel/runtime-7.14.5.tgz?cache=0&sync_timestamp=1623280413156&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40babel%2Fruntime%2Fdownload%2F%40babel%2Fruntime-7.14.5.tgz#665450911c6031af38f81db530f387ec04cd9a98"
   integrity sha1-ZlRQkRxgMa84+B21MPOH7ATNmpg=
@@ -2173,11 +2173,6 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.0:
-  version "2.2.6"
-  resolved "https://registry.npm.taobao.org/classnames/download/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
-  integrity sha1-Q5Nb/90pHzJtrQogUwmzjQD2UM4=
-
 classnames@^2.3.1:
   version "2.3.1"
   resolved "https://registry.npm.taobao.org/classnames/download/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
@@ -2233,6 +2228,11 @@ clsx@^1.0.4:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/clsx/download/clsx-1.1.0.tgz#62937c6adfea771247c34b54d320fb99624f5702"
   integrity sha1-YpN8at/qdxJHw0tU0yD7mWJPVwI=
+
+clsx@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.nlark.com/clsx/download/clsx-1.1.1.tgz#98b3134f9abbdf23b2663491ace13c5c03a73188"
+  integrity sha1-mLMTT5q73yOyZjSRrOE8XAOnMYg=
 
 code-point-at@^1.0.0:
   version "1.1.0"
@@ -3612,11 +3612,6 @@ graceful-fs@^4.2.3:
   resolved "https://registry.npm.taobao.org/graceful-fs/download/graceful-fs-4.2.6.tgz#ff040b2b0853b23c3d31027523706f1885d76bee"
   integrity sha1-/wQLKwhTsjw9MQJ1I3BvGIXXa+4=
 
-gud@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npm.taobao.org/gud/download/gud-1.0.0.tgz#a489581b17e6a70beca9abe3ae57de7a499852c0"
-  integrity sha1-pIlYGxfmpwvsqavjrlfeekmYUsA=
-
 gzip-size@^5.0.0:
   version "5.1.1"
   resolved "https://registry.npm.taobao.org/gzip-size/download/gzip-size-5.1.1.tgz#cb9bee692f87c0612b232840a873904e4c135274"
@@ -4878,14 +4873,13 @@ min-document@^2.19.0:
   dependencies:
     dom-walk "^0.1.0"
 
-mini-create-react-context@^0.3.0:
-  version "0.3.2"
-  resolved "https://registry.npm.taobao.org/mini-create-react-context/download/mini-create-react-context-0.3.2.tgz#79fc598f283dd623da8e088b05db8cddab250189"
-  integrity sha1-efxZjyg91iPajgiLBduM3aslAYk=
+mini-create-react-context@^0.4.0:
+  version "0.4.1"
+  resolved "https://registry.nlark.com/mini-create-react-context/download/mini-create-react-context-0.4.1.tgz#072171561bfdc922da08a60c2197a497cc2d1d5e"
+  integrity sha1-ByFxVhv9ySLaCKYMIZekl8wtHV4=
   dependencies:
-    "@babel/runtime" "^7.4.0"
-    gud "^1.0.0"
-    tiny-warning "^1.0.2"
+    "@babel/runtime" "^7.12.1"
+    tiny-warning "^1.0.3"
 
 minimalistic-assert@^1.0.0, minimalistic-assert@^1.0.1:
   version "1.0.1"
@@ -5891,10 +5885,10 @@ raw-body@2.4.0:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-react-chartist@^0.14.2:
-  version "0.14.3"
-  resolved "https://registry.npm.taobao.org/react-chartist/download/react-chartist-0.14.3.tgz#e016a08ab5c94d3d1842c04a64755ceb660d3202"
-  integrity sha1-4BagirXJTT0YQsBKZHVc62YNMgI=
+react-chartist@^0.14.4:
+  version "0.14.4"
+  resolved "https://registry.nlark.com/react-chartist/download/react-chartist-0.14.4.tgz#a70bdc78a92a7208973cab4253e177e99dc7bd29"
+  integrity sha1-pwvceKkqcgiXPKtCU+F36Z3HvSk=
   dependencies:
     prop-types "^15.5.8"
 
@@ -5925,10 +5919,10 @@ react-event-listener@^0.6.0:
     prop-types "^15.6.0"
     warning "^4.0.1"
 
-react-ga@^2.7.0:
-  version "2.7.0"
-  resolved "https://registry.npm.taobao.org/react-ga/download/react-ga-2.7.0.tgz#24328f157f31e8cffbf4de74a3396536679d8d7c"
-  integrity sha1-JDKPFX8x6M/79N50ozllNmedjXw=
+react-ga@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.npm.taobao.org/react-ga/download/react-ga-3.3.0.tgz#c91f407198adcb3b49e2bc5c12b3fe460039b3ca"
+  integrity sha1-yR9AcZityztJ4rxcErP+RgA5s8o=
 
 react-google-maps@^9.4.5:
   version "9.4.5"
@@ -5947,10 +5941,10 @@ react-google-maps@^9.4.5:
     scriptjs "^2.5.8"
     warning "^3.0.0"
 
-react-hot-loader@^4.12.15:
-  version "4.12.20"
-  resolved "https://registry.npm.taobao.org/react-hot-loader/download/react-hot-loader-4.12.20.tgz#c2c42362a7578e5c30357a5ff7afa680aa0bef8a"
-  integrity sha1-wsQjYqdXjlwwNXpf96+mgKoL74o=
+react-hot-loader@^4.13.0:
+  version "4.13.0"
+  resolved "https://registry.nlark.com/react-hot-loader/download/react-hot-loader-4.13.0.tgz#c27e9408581c2a678f5316e69c061b226dc6a202"
+  integrity sha1-wn6UCFgcKmePUxbmnAYbIm3GogI=
   dependencies:
     fast-levenshtein "^2.0.6"
     global "^4.3.0"
@@ -5997,29 +5991,29 @@ react-proxy-loader@^0.3.5:
   dependencies:
     loader-utils "^1.0.2"
 
-react-router-dom@^5.1.2:
-  version "5.1.2"
-  resolved "https://registry.npm.taobao.org/react-router-dom/download/react-router-dom-5.1.2.tgz#06701b834352f44d37fbb6311f870f84c76b9c18"
-  integrity sha1-BnAbg0NS9E03+7YxH4cPhMdrnBg=
+react-router-dom@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.nlark.com/react-router-dom/download/react-router-dom-5.2.0.tgz#9e65a4d0c45e13289e66c7b17c7e175d0ea15662"
+  integrity sha1-nmWk0MReEyieZsexfH4XXQ6hVmI=
   dependencies:
     "@babel/runtime" "^7.1.2"
     history "^4.9.0"
     loose-envify "^1.3.1"
     prop-types "^15.6.2"
-    react-router "5.1.2"
+    react-router "5.2.0"
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
-react-router@5.1.2:
-  version "5.1.2"
-  resolved "https://registry.npm.taobao.org/react-router/download/react-router-5.1.2.tgz?cache=0&sync_timestamp=1585960944494&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-router%2Fdownload%2Freact-router-5.1.2.tgz#6ea51d789cb36a6be1ba5f7c0d48dd9e817d3418"
-  integrity sha1-bqUdeJyzamvhul98DUjdnoF9NBg=
+react-router@5.2.0:
+  version "5.2.0"
+  resolved "https://registry.nlark.com/react-router/download/react-router-5.2.0.tgz#424e75641ca8747fbf76e5ecca69781aa37ea293"
+  integrity sha1-Qk51ZByodH+/duXsyml4GqN+opM=
   dependencies:
     "@babel/runtime" "^7.1.2"
     history "^4.9.0"
     hoist-non-react-statics "^3.1.0"
     loose-envify "^1.3.1"
-    mini-create-react-context "^0.3.0"
+    mini-create-react-context "^0.4.0"
     path-to-regexp "^1.7.0"
     prop-types "^15.6.2"
     react-is "^16.6.0"
@@ -6033,43 +6027,43 @@ react-side-effect@^1.0.2:
   dependencies:
     shallowequal "^1.0.1"
 
-react-swipeable-views-core@^0.13.7:
-  version "0.13.7"
-  resolved "https://registry.npm.taobao.org/react-swipeable-views-core/download/react-swipeable-views-core-0.13.7.tgz#c082b553f26e83fd20fc17f934200eb717023c8a"
-  integrity sha1-wIK1U/Jug/0g/Bf5NCAOtxcCPIo=
+react-swipeable-views-core@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.nlark.com/react-swipeable-views-core/download/react-swipeable-views-core-0.14.0.tgz#6ac443a7cc7bc5ea022fbd549292bb5fff361cce"
+  integrity sha1-asRDp8x7xeoCL71UkpK7X/82HM4=
   dependencies:
     "@babel/runtime" "7.0.0"
     warning "^4.0.1"
 
-react-swipeable-views-utils@^0.13.9:
-  version "0.13.9"
-  resolved "https://registry.npm.taobao.org/react-swipeable-views-utils/download/react-swipeable-views-utils-0.13.9.tgz#a66e98f2f4502d8b00182901f80d13b2f903e10f"
-  integrity sha1-pm6Y8vRQLYsAGCkB+A0TsvkD4Q8=
+react-swipeable-views-utils@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.nlark.com/react-swipeable-views-utils/download/react-swipeable-views-utils-0.14.0.tgz#6b76e251906747482730c22002fe47ab1014ba32"
+  integrity sha1-a3biUZBnR0gnMMIgAv5HqxAUujI=
   dependencies:
     "@babel/runtime" "7.0.0"
     keycode "^2.1.7"
     prop-types "^15.6.0"
     react-event-listener "^0.6.0"
-    react-swipeable-views-core "^0.13.7"
+    react-swipeable-views-core "^0.14.0"
     shallow-equal "^1.2.1"
 
-react-swipeable-views@^0.13.1:
-  version "0.13.9"
-  resolved "https://registry.npm.taobao.org/react-swipeable-views/download/react-swipeable-views-0.13.9.tgz#d6a6c508bf5288ad55509f9c65916db5df0f2cec"
-  integrity sha1-1qbFCL9SiK1VUJ+cZZFttd8PLOw=
+react-swipeable-views@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.nlark.com/react-swipeable-views/download/react-swipeable-views-0.14.0.tgz#149c0df3d92220cc89e3f6d5c04a78dfe46f9b54"
+  integrity sha1-FJwN89kiIMyJ4/bVwEp43+Rvm1Q=
   dependencies:
     "@babel/runtime" "7.0.0"
     prop-types "^15.5.4"
-    react-swipeable-views-core "^0.13.7"
-    react-swipeable-views-utils "^0.13.9"
+    react-swipeable-views-core "^0.14.0"
+    react-swipeable-views-utils "^0.14.0"
     warning "^4.0.1"
 
-react-tabs@^3.0.0:
-  version "3.1.0"
-  resolved "https://registry.npm.taobao.org/react-tabs/download/react-tabs-3.1.0.tgz#ecc50f034c1d6da2606fab9293055bbc861b382e"
-  integrity sha1-7MUPA0wdbaJgb6uSkwVbvIYbOC4=
+react-tabs@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.npm.taobao.org/react-tabs/download/react-tabs-3.2.2.tgz#07bdc3cdb17bdffedd02627f32a93cd4b3d6e4d0"
+  integrity sha1-B73DzbF73/7dAmJ/Mqk81LPW5NA=
   dependencies:
-    classnames "^2.2.0"
+    clsx "^1.1.0"
     prop-types "^15.5.0"
 
 react-transition-group@^4.4.0:
@@ -7196,7 +7190,7 @@ tiny-invariant@^1.0.2:
   resolved "https://registry.npm.taobao.org/tiny-invariant/download/tiny-invariant-1.1.0.tgz#634c5f8efdc27714b7f386c35e6760991d230875"
   integrity sha1-Y0xfjv3CdxS384bDXmdgmR0jCHU=
 
-tiny-warning@^1.0.0, tiny-warning@^1.0.2:
+tiny-warning@^1.0.0, tiny-warning@^1.0.2, tiny-warning@^1.0.3:
   version "1.0.3"
   resolved "https://registry.npm.taobao.org/tiny-warning/download/tiny-warning-1.0.3.tgz?cache=0&sync_timestamp=1562635535811&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftiny-warning%2Fdownload%2Ftiny-warning-1.0.3.tgz#94a30db453df4c643d0fd566060d60a875d84754"
   integrity sha1-lKMNtFPfTGQ9D9VmBg1gqHXYR1Q=
