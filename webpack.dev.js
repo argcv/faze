@@ -1,5 +1,4 @@
-// const { merge } = require('webpack-merge') # for higher webpack
-const merge = require('webpack-merge')
+const {merge} = require('webpack-merge')
 const common = require('./webpack.common.js')
 
 const devServer = {
