@@ -84,7 +84,7 @@ const styles = {
 function UpgradeToPro(props) {
   const { classes } = props;
   return (
-    <GridContainer justify="center">
+    <GridContainer justifyContent="center">
       <GridItem xs={12} sm={12} md={8}>
         <Card>
           <CardHeader color="info">

@@ -74,8 +74,8 @@ class App extends React.Component {
 
     let baseUrl = ""
 
-    if(match && match.url) {
-        baseUrl = match.url
+    if (match && match.url) {
+      baseUrl = match.url
     }
 
     let switchRoutes = (
@@ -88,7 +88,7 @@ class App extends React.Component {
         })}
       </Switch>
     );
-        
+
     if (this.props.location.pathname === "/examples/try-redirect") {
       console.log("path: %o, redirecting to /hello-world", this.props.location.pathname)
       return <Redirect to='/hello-world' />;
@@ -120,9 +120,9 @@ class App extends React.Component {
               <div className={classes.container}>{switchRoutes}</div>
             </div>
           ) : (
-              // for map only
-              <div className={classes.map}>{switchRoutes}</div>
-            )}
+            // for map only
+            <div className={classes.map}>{switchRoutes}</div>
+          )}
           {this.getRoute() ? <Footer /> : null}
         </div>
       </div>

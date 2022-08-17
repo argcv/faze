@@ -71,7 +71,7 @@ class HelloWorldPage extends React.Component {
     }
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.setState({
       // header: ["Name", "Country", "City", "Salary"]
       header: ["ID", "Name", "Email", "Content", "Click"]
@@ -79,7 +79,7 @@ class HelloWorldPage extends React.Component {
     this.fetchData(0, this.state.rowsPerPage)
   }
 
-  async componentWillReceiveProps(props) {
+  async UNSAFE_componentWillReceiveProps(props) {
     this.fetchData(0, this.state.rowsPerPage)
   }
 
@@ -173,8 +173,8 @@ class HelloWorldPage extends React.Component {
               count={this.state.size}
               rowsPerPage={this.state.rowsPerPage}
               page={this.state.page}
-              onChangePage={this.handleChangePage}
-              onChangeRowsPerPage={this.handleChangeRowsPerPage}
+              onPageChange={this.handleChangePage}
+              onRowsPerPageChange={this.handleChangeRowsPerPage}
               ActionsComponent={TablePaginationActions}
             />
           </div>

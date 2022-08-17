@@ -160,7 +160,7 @@ class Notifications extends React.Component {
           </GridContainer>
           <br />
           <br />
-          <GridContainer justify="center">
+          <GridContainer justifyContent="center">
             <GridItem xs={12} sm={12} md={6} style={{ textAlign: "center" }}>
               <h5>
                 Notifications Places
@@ -168,7 +168,7 @@ class Notifications extends React.Component {
               </h5>
             </GridItem>
           </GridContainer>
-          <GridContainer justify="center">
+          <GridContainer justifyContent="center">
             <GridItem xs={12} sm={12} md={10} lg={8}>
               <GridContainer>
                 <GridItem xs={12} sm={12} md={4}>
@@ -228,7 +228,7 @@ class Notifications extends React.Component {
               </GridContainer>
             </GridItem>
           </GridContainer>
-          <GridContainer justify={"center"}>
+          <GridContainer justifyContent={"center"}>
             <GridItem xs={12} sm={12} md={10} lg={8}>
               <GridContainer>
                 <GridItem xs={12} sm={12} md={4}>
