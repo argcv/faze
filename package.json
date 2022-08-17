@@ -10,7 +10,7 @@
     "@material-ui/lab": "^4.0.0-alpha.61",
     "@types/googlemaps": "^3.43.3",
     "@types/markerclustererplus": "^2.1.33",
-    "@types/react": "^17.0.11",
+    "@types/react": "^18.0.17",
     "ajv": "^8.6.0",
     "axios": "^0.21.2",
     "chartist": "^0.11.4",
