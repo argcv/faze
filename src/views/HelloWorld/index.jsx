@@ -67,7 +67,8 @@ class HelloWorldPage extends React.Component {
       data: [],
       page: 0,
       rowsPerPage: 5,
-      size: 0
+      size: 0,
+      rowsPerPageOptions: [5, 10, 20, 50, 100, 200, 500],
     }
   }
 
@@ -103,7 +104,7 @@ class HelloWorldPage extends React.Component {
         item["name"],
         item["email"],
         item["body"],
-        <Button color="primary" onClick={e => this.handleClickButton(e, item["id"]) }>Operation</Button>
+        <Button color="primary" onClick={e => this.handleClickButton(e, item["id"])}>Operation</Button>
       ]
       return user_data
     })
@@ -175,6 +176,7 @@ class HelloWorldPage extends React.Component {
               page={this.state.page}
               onPageChange={this.handleChangePage}
               onRowsPerPageChange={this.handleChangeRowsPerPage}
+              rowsPerPageOptions={this.state.rowsPerPageOptions}
               ActionsComponent={TablePaginationActions}
             />
           </div>
