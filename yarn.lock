@@ -5700,10 +5700,10 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-perfect-scrollbar@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.nlark.com/perfect-scrollbar/download/perfect-scrollbar-1.5.1.tgz?cache=0&sync_timestamp=1620285520211&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fperfect-scrollbar%2Fdownload%2Fperfect-scrollbar-1.5.1.tgz#8ee5b3ca06ce9c3f7338fd4ab67a55248a6cf3be"
-  integrity sha1-juWzygbOnD9zOP1KtnpVJIps874=
+perfect-scrollbar@^1.5.5:
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/perfect-scrollbar/-/perfect-scrollbar-1.5.5.tgz#41a211a2fb52a7191eff301432134ea47052b27f"
+  integrity sha512-dzalfutyP3e/FOpdlhVryN4AJ5XDVauVWxybSkLZmakFE2sS3y3pc4JnSprw8tGmHvkaG5Edr5T7LBTZ+WWU2g==
 
 performance-now@^2.1.0:
   version "2.1.0"
